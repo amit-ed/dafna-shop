@@ -16,6 +16,24 @@ export class AppComponent {
 
   @ViewChild(MatSidenav)
   sidenav!: MatSidenav;
+  isExpanded = true;
+  showSubmenu: boolean = false;
+  isShowing = false;
+  showSubSubMenu: boolean = false;
+
+  mouseenter() {
+    if (!this.isExpanded) {
+      this.isShowing = true;
+    }
+  }
+
+  mouseleave() {
+    if (!this.isExpanded) {
+      this.isShowing = false;
+    }
+  }
+
+
 
   constructor(private observer: BreakpointObserver, private router: Router) {}
 

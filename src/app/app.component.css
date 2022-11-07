@@ -7,7 +7,6 @@ mat-toolbar {
   float: right;
   background: #004a9f;
   color: white;
-  position: -webkit-sticky;
   position: sticky;
   display: block;
   top: 0px;
