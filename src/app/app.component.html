@@ -37,18 +37,16 @@
       <mat-icon>info</mat-icon>
     </button>
 
-    <!--    <mat-divider></mat-divider>-->
-
   </mat-sidenav>
   <mat-sidenav-content>
-    <button class="top-button" style="float: right; background: #004a9f; color: white"
+    <button class="top-button"
       *ngIf="sidenav.mode === 'over'"
       (click)="sidenav.toggle()"
     >
       <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
       <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
     </button>
-    <div class="content mat-elevation-z8">
+    <div>
       <router-outlet></router-outlet>
     </div>
   </mat-sidenav-content>

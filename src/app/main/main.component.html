@@ -1,7 +1,7 @@
-<div class="text-center container">
+<div class="text-center container py-5">
   <h4 class="mt-4 mb-5"><strong>Bestsellers</strong></h4>
+      <mat-divider></mat-divider> <br>
   <div class="row">
-
     <app-product *ngFor="let product of products"
                  [src]="product.src" [price]="product.price" [name]="product.name"
                  [description]="product.desription"></app-product>
