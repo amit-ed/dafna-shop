@@ -11,12 +11,16 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { ProductComponent } from './product/product.component';
+import { CoursesComponent } from './courses/courses.component';
+import { CourseComponent } from './course/course.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
-    ProductComponent
+    ProductComponent,
+    CoursesComponent,
+    CourseComponent
   ],
   imports: [
     BrowserModule,
