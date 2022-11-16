@@ -130,6 +130,7 @@ h1, h2, h3, h4, h5, h6
 }
 .input_field
 {
+  text-align: end;
   width: calc((100% - 60px) / 3);
   height: 50px;
   padding-left: 25px;
