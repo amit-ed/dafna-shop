@@ -1,0 +1,7 @@
+<div class="text-center container">
+  <h4 class="mt-12 mb-1"><strong>מוצרים</strong></h4>
+  <mat-divider></mat-divider> <br>
+  <div class="row">
+    <app-product *ngFor="let product of products" [product]="product"></app-product>
+  </div>
+</div>
